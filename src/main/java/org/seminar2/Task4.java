@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Пользователю должно показаться сообщение, что пустые строки вводить нельзя.
  */
 public class Task4 {
-    public static void enterString() throws NullPointerException {
+    public static void enterString(){
         Scanner scan = new Scanner(System.in);
         String s;
         while (true){
@@ -15,11 +15,11 @@ public class Task4 {
                 System.out.println("Enter some string: ");
                 s = scan.nextLine();
                 if (s.isEmpty()){
-                    throw new NullPointerException("Empty line is not allowed: ");
+                    throw new Exception("Empty line is not allowed: ");
                 }
                 return;
             }
-            catch (NullPointerException e) {
+            catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }

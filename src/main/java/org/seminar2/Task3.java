@@ -1,7 +1,7 @@
 package org.seminar2;
 
 public class Task3 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         try {
             int a = 90;
             int b = 3;
